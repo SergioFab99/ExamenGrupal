@@ -1,17 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class Llave : MonoBehaviour
 {
-
-    public int numLlaves = 0;
+    public GameManager gameManager;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            numLlaves++;
-            Debug.Log("Has recolectado una llave! Ahora tienes " + numLlaves + " llaves.");
+            gameManager.RecolectarLlave();
             Destroy(gameObject);
         }
     }
