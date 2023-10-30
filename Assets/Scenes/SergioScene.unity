@@ -656,6 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numLlaves: 0
+  objetoAMover: {fileID: 1876909218}
 --- !u!4 &1217277382
 Transform:
   m_ObjectHideFlags: 0
